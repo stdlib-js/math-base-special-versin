@@ -31,7 +31,7 @@ The [versed sine][versed-sine] is defined as
 <!-- <equation class="equation" label="eq:versine" align="center" raw="\operatorname{versin}(\theta) = 1 - \cos \theta" alt="Versed sine."> -->
 
 ```math
-\operatorname{versin}(\theta) = 1 - \cos \theta
+\mathop{\mathrm{versin}}(\theta) = 1 - \cos \theta
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{versin}(\theta) = 1 - \cos \theta" data-equation="eq:versine">
@@ -45,14 +45,30 @@ The [versed sine][versed-sine] is defined as
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-base-special-versin
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import versin from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-versin@esm/index.mjs';
+var versin = require( '@stdlib/math-base-special-versin' );
 ```
 
 #### versin( x )
@@ -80,15 +96,10 @@ v = versin( -3.141592653589793/6.0 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@esm/index.mjs';
-import TWO_PI from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-two-pi@esm/index.mjs';
-import versin from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-versin@esm/index.mjs';
+```javascript
+var linspace = require( '@stdlib/array-base-linspace' );
+var TWO_PI = require( '@stdlib/constants-float64-two-pi' );
+var versin = require( '@stdlib/math-base-special-versin' );
 
 var x = linspace( 0.0, TWO_PI, 100 );
 
@@ -96,10 +107,6 @@ var i;
 for ( i = 0; i < x.length; i++ ) {
     console.log( versin( x[ i ] ) );
 }
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -131,7 +138,7 @@ for ( i = 0; i < x.length; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -195,11 +202,11 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/cos]: https://github.com/stdlib-js/math-base-special-cos/tree/esm
+[@stdlib/math/base/special/cos]: https://github.com/stdlib-js/math-base-special-cos
 
-[@stdlib/math/base/special/sin]: https://github.com/stdlib-js/math-base-special-sin/tree/esm
+[@stdlib/math/base/special/sin]: https://github.com/stdlib-js/math-base-special-sin
 
-[@stdlib/math/base/special/vercos]: https://github.com/stdlib-js/math-base-special-vercos/tree/esm
+[@stdlib/math/base/special/vercos]: https://github.com/stdlib-js/math-base-special-vercos
 
 <!-- </related-links> -->
 
