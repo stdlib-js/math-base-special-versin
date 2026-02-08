@@ -63,6 +63,11 @@ The [versed sine][versed-sine] is defined as
 ## Usage
 
 ```javascript
+import versin from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-versin@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-base-special-versin/tags). For example,
+
+```javascript
 import versin from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-versin@v0.3.1-esm/index.mjs';
 ```
 
@@ -100,7 +105,7 @@ v = versin( -3.141592653589793/6.0 );
 import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-uniform@esm/index.mjs';
 import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@esm/index.mjs';
 import TWO_PI from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-two-pi@esm/index.mjs';
-import versin from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-versin@v0.3.1-esm/index.mjs';
+import versin from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-versin@esm/index.mjs';
 
 var opts = {
     'dtype': 'float64'
